@@ -1,17 +1,21 @@
+// LoginPage.tsx
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const LoginWrapper = styled.div`
-  margin: 2rem;
+  background: #FFF7F0;
+  border: 1px solid #FFCBA4;
+  border-radius: 8px;
+  margin: 2rem auto;
   padding: 1rem;
   max-width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 `;
 
 const Title = styled.h2`
   margin-bottom: 1rem;
   text-align: center;
+  color: #6D3E5D; /* tie in with nav link color */
 `;
 
 const FormGroup = styled.div`
@@ -27,19 +31,34 @@ const Label = styled.label`
 const Input = styled.input`
   width: 100%;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   box-sizing: border-box;
+  border: 1px solid #FFCBA4;
+  border-radius: 4px;
+  font-family: 'Pacifico', cursive;
+`;
+
+const SubmitButton = styled.button`
+  background-color: #FFB09E;
+  color: #3E2723;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+  &:hover {
+    background-color: #E79788;
+  }
 `;
 
 const StatusMessage = styled.p`
   margin-top: 1rem;
   font-weight: bold;
   color: #008000;
+  text-align: center;
 `;
 
-interface ILoginProps {}
-
-const LoginPage: React.FC<ILoginProps> = () => {
+const LoginPage: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [statusMsg, setStatusMsg] = useState<string>('');
@@ -88,7 +107,7 @@ const LoginPage: React.FC<ILoginProps> = () => {
             required
           />
         </FormGroup>
-        <button type="submit">Login</button>
+        <SubmitButton type="submit">Login</SubmitButton>
       </form>
       {statusMsg && <StatusMessage>{statusMsg}</StatusMessage>}
     </LoginWrapper>

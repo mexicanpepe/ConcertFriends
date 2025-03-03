@@ -1,12 +1,14 @@
+// GroupDashBoard.tsx
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const DashboardWrapper = styled.div`
-  margin: 2rem;
+  margin: 2rem 0;
 `;
 
 const DashboardHeader = styled.h2`
   margin-bottom: 1rem;
+  color: #6D3E5D;
 `;
 
 const GroupList = styled.ul`
@@ -15,10 +17,15 @@ const GroupList = styled.ul`
 `;
 
 const GroupItem = styled.li`
-  background: #f5f5f5;
+  background: #FFF7F0;
+  border: 1px solid #FFCBA4;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: #FFE7CE;
+  }
 `;
 
 interface Group {
