@@ -1,21 +1,21 @@
-// LoginPage.tsx
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import GoogleLogin from './GoogleLogin';
 
 const LoginWrapper = styled.div`
   background: #FFF7F0;
   border: 1px solid #FFCBA4;
   border-radius: 8px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   max-width: 400px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 `;
 
 const Title = styled.h2`
   margin-bottom: 1rem;
   text-align: center;
-  color: #6D3E5D; /* tie in with nav link color */
+  color: #6D3E5D;
 `;
 
 const FormGroup = styled.div`
@@ -46,9 +46,18 @@ const SubmitButton = styled.button`
   padding: 0.5rem 1rem;
   font-family: 'Pacifico', cursive;
   cursor: pointer;
+  width: 100%;
+  margin-bottom: 1rem;
+
   &:hover {
     background-color: #E79788;
   }
+`;
+
+const Divider = styled.hr`
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
 `;
 
 const StatusMessage = styled.p`
@@ -86,6 +95,7 @@ const LoginPage: React.FC = () => {
   return (
     <LoginWrapper>
       <Title>Concert Friends - Login</Title>
+
       <form onSubmit={handleLogin}>
         <FormGroup>
           <Label htmlFor="email">Email</Label>
@@ -109,6 +119,11 @@ const LoginPage: React.FC = () => {
         </FormGroup>
         <SubmitButton type="submit">Login</SubmitButton>
       </form>
+
+      <Divider />
+
+      <GoogleLogin />
+
       {statusMsg && <StatusMessage>{statusMsg}</StatusMessage>}
     </LoginWrapper>
   );

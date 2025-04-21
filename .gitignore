@@ -1,0 +1,16 @@
+# Backend
+backend/node_modules/
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/.env  # (just in case you later add envs to frontend)
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+# Build artifacts (optional if you build React frontend)
+frontend/build/
