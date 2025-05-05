@@ -12,7 +12,6 @@ interface ArtistPriority {
   points: number;
 }
 
-// Animation
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -24,7 +23,6 @@ const fadeIn = keyframes`
   }
 `;
 
-// Styled Components
 const Container = styled.div`
   margin-top: 2rem;
 `;
@@ -38,11 +36,11 @@ const ArtistList = styled.ul`
 const ArtistItem = styled.li<{ rank: number }>`
   background: ${({ rank }) =>
     rank === 0
-      ? '#FFE082'  // Goldish for #1
+      ? '#FFE082'
       : rank === 1
-      ? '#CFD8DC'  // Silverish for #2
+      ? '#CFD8DC'
       : rank === 2
-      ? '#FFCCBC'  // Bronzeish for #3
+      ? '#FFCCBC'
       : '#FFF7F0'};
   border: 2px solid #FFCBA4;
   border-radius: 12px;

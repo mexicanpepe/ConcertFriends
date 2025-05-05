@@ -1,7 +1,7 @@
 // backend/routes/auth.js
 
 import express from 'express';
-import admin from '../firebase-admin.js'; // ✅ Import initialized Firebase admin
+import admin from '../firebase-admin.js';
 import pool from '../DB/db.js';
 import dotenv from 'dotenv';
 dotenv.config();

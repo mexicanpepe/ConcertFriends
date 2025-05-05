@@ -18,4 +18,8 @@ pool.on('error', (err, client) => {
   process.exit(-1);
 });
 
+afterAll(async () => {
+  await pool.end();
+});
+
 export default pool;

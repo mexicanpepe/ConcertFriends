@@ -1,6 +1,6 @@
 // App.tsx
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom'; // ✅ Added Navigate
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import GroupDashboard from './components/GroupDashBoard';
 import CreateGroup from './components/CreateGroup';

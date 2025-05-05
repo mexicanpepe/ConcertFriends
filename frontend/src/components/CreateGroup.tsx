@@ -119,9 +119,8 @@ const CreateGroup: React.FC = () => {
 
   const getFestivalImage = (festivalName: string) => {
     if (festivalName.toLowerCase().includes('coachella')) {
-      return '/coachella.png'; // your local image path from public/
+      return '/coachella.png';
     }
-    // default or fallback image if needed:
     return '/default-festival.png';
   };
 

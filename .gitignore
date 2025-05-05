@@ -14,3 +14,6 @@ frontend/.env  # (just in case you later add envs to frontend)
 
 # Build artifacts (optional if you build React frontend)
 frontend/build/
+
+# Secrets
+backend/concertfriends-service-account.json.json

@@ -12,11 +12,11 @@ const GoogleLogin = () => {
   const handleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
-      const idToken = await result.user.getIdToken(); // Firebase token
+      const idToken = await result.user.getIdToken();
 
       cookies.set('auth-token', idToken, { path: '/' });
 
-      // Optional: Call backend to validate and create/check user
+
       const response = await fetch('http://localhost:8000/auth/firebase-login', {
         method: 'POST',
         headers: {
