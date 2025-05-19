@@ -7,3 +7,7 @@ This project addresses the inefficiencies of manual coordination by introducing 
 
 # Project Artifacts
 https://drive.google.com/drive/folders/1RC60QqZu-dXKSYEk4ZJU0Zlajr4pmIMY?usp=sharing
+
+# App Demo
+https://www.loom.com/share/b602bd9cba3c4dd690f5aabd39f4adbd?sid=fa7b8efe-d9a8-4b5b-81f0-80c31db96e86
+
