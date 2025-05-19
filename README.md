@@ -1,8 +1,6 @@
-# Project Poster
+# ConcertFriends
 <img width="693" alt="Screenshot 2025-05-18 at 11 29 10 PM" src="https://github.com/user-attachments/assets/1f298b5c-5e67-4513-a012-d4af1cba4435" />
 
-
-# ConcertFriends
 
 Concert Friends is a web application designed to enhance the planning experience for groups of friends that are attending music festivals. The application allows user to create groups and invite friends to collaboratively prioritize artists they wish to see at a music festival. By leveraging modern web tech stacks such as React with TypeScript for the front end, Express with REST API’s for the backend, and PostgreSQL for data storage. The Concert Friends web application’s main goal is to provide a seamless and interactive platform for group coordination. 
 Some key features of the application include the ability for each user to rank their top artists per festival day. The app will consolidate individual rankings into a unified group priority. The application also integrates with a music API to provide additional meta data for each artist, such as top songs, and performance highlights, enabling informed decision making for the group. Through an intuitive interface and an intelligent ranking system, Concert Friends will streamline group planning and ensures a memorable festival experience for all of the friends attending the concerts. 
